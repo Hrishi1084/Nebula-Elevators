@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#home {
+  position: relative;
+  background-image: url("./images/headerbg.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  text-shadow: 2px 2px 5px black;
+  color: white;
+}
+
+.title h1 {
+  font-size: 6.5em;
+  font-weight: bold;
+}
+
+.title h4 {
+  font-size: 3em;
+  font-style: italic;
+}
+
+#scrollButton {
+  margin-top: 2%;
+  padding: 1%;
+  font-size: 1.5em;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 28px;
+  text-shadow: 2px 2px 5px black;
+  color: white;
+  text-decoration: underline;
+}
+
+#scrollButton:hover {
+  cursor: pointer;
+}
+
+#scrollButton i {
+  margin-left: 10px;
+}
+
+#home a {
+  position: absolute;
+  bottom: 2%;
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  font-size: 3em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#aboutus {
+  display: flex;
+  padding: 1%;
+}
+
+.about {
+  width: 50%;
+}
+
+.about h1 {
+  font-size: 2.8em;
+  text-decoration: underline;
+}
+
+.about p {
+  font-size: 1.5em;
+  margin: 2% 0%;
+}
+
+.aboutImg {
+  text-align: center;
+  width: 50%;
+}
+
+.aboutImg img {
+  width: 60%;
+  border-radius: 15px;
+}
+
+#products {
+  background: linear-gradient(#5b21b6, #a78bfa);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+.productTitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 2%;
+  width: 100%;
+}
+
+.productTitle h1 {
+  font-size: 2.8em;
+  text-decoration: underline;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+.productTitle button {
+  padding: 0% 1%;
+  font-size: 1.2em;
+  background-color: transparent;
+  text-shadow: 2px 2px 5px black;
+  color: white;
+  text-decoration: underline;
+  border: none;
+}
+
+.productTitle button:hover {
+  cursor: pointer;
+}
+
+.product-card {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 1% 1%;
+  padding: 0.5%;
+  width: 15%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.product-card h4 {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#contactus {
+  display: flex;
+}
+
+.contactText {
+  background-color: #320081;
+  width: 50%;
+  padding: 1%;
+}
+
+.contactText h1 {
+  font-size: 2.8em;
+  text-decoration: underline;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+.contactText p {
+  font-size: 1.7em;
+  margin: 7% 0%;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+.contactForm {
+  margin: auto;
+  padding: 2%;
+}
+
+.contactForm form {
+  background-color: rgb(192, 132, 252);
+  padding: 5%;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.contactForm label,
+input {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  font-size: 1.7em;
+  margin: 2% 0%;
+}
+
+.contactForm label {
+  font-weight: bold;
+}
+
+.contactForm input {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 2px;
+  padding: 3px;
+}
+
+#form_sub {
+  background-color: #5b21b6;
+  text-shadow: none;
+  font-weight: bold;
+  padding: 1% 5%;
+  border-radius: 5px;
+}
+
+.footer {
+  display: flex;
+  background-color: #1d1d1d;
+  justify-content: space-around;
+  color: white;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer h2 {
+  font-size: 1.7em;
+  text-decoration: underline;
+  margin: 5%;
+  width: 100%;
+  text-align: center;
+}
+
+.social ul,
+.pages ul {
+  list-style: none;
+}
+
+.office,
+.social,
+.pages,
+.contact {
+  text-align: center;
+}
+
+.office a {
+  font-size: 1.5em;
+}
+
+.pages li {
+  font-size: 1.25em;
+  margin: 2% 0%;
+}
+
+.social ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6em;
+}
+
+.contact p,
+.contact a {
+  font-size: 1.3em;
+}
+
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: 3em;
+  }
+
+  .title h4 {
+    font-size: 1.5em;
+  }
+
+  #scrollButton {
+    font-size: 1em;
+  }
+
+  #aboutus {
+    flex-direction: column;
+  }
+
+  .about {
+    text-align: center;
+    width: 100%;
+  }
+
+  .aboutImg {
+    text-align: center;
+    width: 100%;
+  }
+
+  .aboutImg img {
+    width: 80%;
+    border-radius: 15px;
+  }
+
+  .productTitle h1 {
+    font-size: 2em;
+  }
+
+  .product-card {
+    width: 30%;
+  }
+
+  #contactus {
+    flex-direction: column;
+  }
+
+  .contactText {
+    text-align: center;
+    width: 98%;
+  }
+
+  .contactText h1 {
+    font-size: 2em;
+  }
+
+  .contactForm form {
+    padding: 10px;
+    width: auto;
+  }
+
+  .contactForm label,
+  input {
+    font-size: 1.4em;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  .office,
+  .pages,
+  .social {
+    width: 33%;
+  }
+}

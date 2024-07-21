@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/Logo.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/c50d64cd93.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Nebula Elevators</title>
+  </head>
+
+  <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+      });
+    </script>
+    <div id="home">
+      <div class="title">
+        <h1>NEBULA ELEVATORS</h1>
+        <h4>Rising Stars in Vertical Innovation</h4>
+        <button id="scrollButton">
+          Explore our Products<i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <a href="#aboutus"><i class="fa-solid fa-chevron-down"></i></a>
+    </div>
+    <div id="aboutus" data-aos="fade-right">
+      <div class="about">
+        <h1>About Us</h1>
+        <p>
+          Nebula Elevators is an emerging leader in the vertical transportation
+          industry, specializing in the design and manufacture of luxury lifts,
+          escalators, and advanced parking systems. As a dynamic startup, Nebula
+          Elevators is dedicated to delivering superior quality products that
+          combine innovative technology with elegant design. Our commitment to
+          excellence ensures that each installation not only meets but exceeds
+          industry standards, providing our clients with reliable and
+          aesthetically pleasing solutions for both residential and commercial
+          applications. With a focus on customer satisfaction and cutting-edge
+          engineering, Nebula Elevators is poised to set new benchmarks in the
+          elevator industry.
+        </p>
+      </div>
+      <div data-aos="fade-left" class="aboutImg">
+        <img src="./images/headerbg.jpg" alt="" />
+      </div>
+    </div>
+    <div id="products">
+      <div class="productTitle">
+        <h1>Our Products</h1>
+        <button>View all<i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="product-card">
+        <img src="./images/product.jpg" alt="" />
+        <h4>Product</h4>
+        <p>Description</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/product.jpg" alt="" />
+        <h4>Product</h4>
+        <p>Description</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/product.jpg" alt="" />
+        <h4>Product</h4>
+        <p>Description</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/product.jpg" alt="" />
+        <h4>Product</h4>
+        <p>Description</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/product.jpg" alt="" />
+        <h4>Product</h4>
+        <p>Description</p>
+      </div>
+    </div>
+    <div id="contactus">
+      <div data-aos="fade-right" class="contactText">
+        <h1>Contact Us</h1>
+        <p>
+          We value your feedback and are here to assist with any inquiries you
+          may have. Whether you have questions about our products, need support,
+          or wish to discuss a potential project, please don't hesitate to reach
+          out. Our dedicated team is ready to provide you with prompt and
+          courteous service.
+        </p>
+      </div>
+      <div data-aos="fade-left" class="contactForm">
+        <form action="#">
+          <label for="name">Name: </label>
+          <input type="text" name="name" required /><br />
+          <label for="email">Email: </label>
+          <input type="email" name="email" /><br />
+          <label for="phone">Contact: </label>
+          <input type="number" name="phone" required /><br />
+          <label for="city">City: </label>
+          <input type="text" name="city" /><br />
+          <input type="submit" name="Submit" id="form_sub" />
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="office">
+        <h2>Our office</h2>
+        <a href="https://goo.gl/maps/9xW23U2LTFwEBPRL7" target="_blank"
+          >Shindevadi</a
+        >
+      </div>
+      <div class="pages">
+        <h2>Pages</h2>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutus">About Us</a></li>
+          <li><a href="#products">Our Products</a></li>
+          <li><a href="#contactus">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="social">
+        <h2>Follow Us</h2>
+        <ul>
+          <li>
+            <a href="insta" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="facebook" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="linkedin" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h2>Contact</h2>
+        <p>8767960896/9049065000</p>
+        <a href="mailto:vikassurya75@gmail.com" target="_blank"
+          >vikassurya75@gmail.com</a
+        >
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("scrollButton")
+        .addEventListener("click", function () {
+          document.getElementById("products").scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+    </script>
+  </body>
+</html>
